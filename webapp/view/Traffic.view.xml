@@ -1,0 +1,29 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Traffic" xmlns="sap.m" xmlns:chart="sap.chart" xmlns:data="sap.chart.data">
+    <Page showHeader="true" title="Traffic" showFooter="true" showNavButton="false">
+        <content>
+            <Breadcrumbs currentLocationText="Traffic" class="sapUiMediumMargin">
+                <links>
+                    <Link text="Menu" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false" press="_onLinkPress"/>
+                </links>
+            </Breadcrumbs>
+            <ScrollContainer horizontal="true" vertical="true" width="auto" height="513.00000000px" visible="true" class="sapUiMediumMargin">
+                <content>
+                    <chart:Chart id="sap_Responsive_Page_0-content-sap_m_ScrollContainer-1606440067501-content-sap_chart_LineChart-1606442158862" width="100%" height="450px" visibleDimensions="__id" visibleMeasures="mea0,Facebook,Instagram" vizProperties="{staticDataModel>/sap_Responsive_Page_0-content-sap_m_ScrollContainer-1606440067501-content-sap_chart_LineChart-1606442158862/vizProperties}" chartType="line" selectionMode="Single" uiConfig="{}">
+                        <chart:dimensions>
+                            <data:Dimension name="__id" label="Day of the week" role="category" textProperty="dim0"/>
+                        </chart:dimensions>
+                        <chart:measures>
+                            <data:Measure name="mea0" label="WebSite" role="axis2"/>
+                            <data:Measure name="Facebook" role="axis2"/>
+                            <data:Measure name="Instagram" role="axis2"/>
+                        </chart:measures>
+                    </chart:Chart>
+                </content>
+            </ScrollContainer>
+        </content>
+        <footer/>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

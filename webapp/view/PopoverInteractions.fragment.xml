@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.untitledPrototype.controller.PopoverInteractions" xmlns="sap.m">
+    <ResponsivePopover contentHeight="100px" contentWidth="950px" horizontalScrolling="false" modal="false" offsetX="0" offsetY="0" placement="Auto" showHeader="true" title="Interacciones" verticalScrolling="true" visible="true" showCloseButton="true">
+        <content>
+            <Text text="Number of interactions (Likes, comments, clicks) that the company had throught every channel during last week." width="auto" maxLines="10" wrapping="true" textAlign="Left" textDirection="Inherit" visible="true" class="sapUiSmallMargin"/>
+        </content>
+        <beginButton/>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </ResponsivePopover>
+</core:FragmentDefinition>

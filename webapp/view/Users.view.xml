@@ -1,0 +1,48 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Users" xmlns="sap.m">
+    <Page showHeader="true" title="Users List" showFooter="true" showNavButton="false">
+        <content>
+            <Breadcrumbs currentLocationText="Users" class="sapUiMediumMargin">
+                <links>
+                    <Link text="Menu" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false" press="_onLinkPress"/>
+                </links>
+            </Breadcrumbs>
+            <List mode="SingleSelectMaster" width="auto" headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" visible="true" class="sapUiMediumMargin sapUiContentPadding" itemPress="_onObjectListItemPress" items="{path:'/Hoja1Set', templateShareable:true}">
+                <infoToolbar>
+                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                        <content>
+                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </content>
+                    </Toolbar>
+                </infoToolbar>
+                <headerToolbar>
+                    <Toolbar enabled="true" visible="true" width="" design="Solid">
+                        <content>
+                            <SearchField placeholder="Search" showSearchButton="true" visible="true" width="100%"/>
+                        </content>
+                    </Toolbar>
+                </headerToolbar>
+                <items>
+                    <ObjectListItem intro="{ID}" title="{Name}" icon="sap-icon://person-placeholder" number="{Ocupation}" numberUnit="{Most_Used_Device}" numberState="None" type="Active" selected="true" showMarkers="false" press="_onObjectListItemPress1">
+                        <attributes>
+                            <ObjectAttribute text="Student: Universidad de los Andes" active="false" visible="true"/>
+                            <ObjectAttribute text="Most Used Device: Cellphone" active="false" visible="true"/>
+                            <ObjectAttribute text="Interactions: 8" active="false" visible="true"/>
+                            <ObjectAttribute text="Last interaction: 2020-12-05" active="false" visible="true"/>
+                            <ObjectAttribute text="Frequent Social Network: Instagram" active="false" visible="true"/>
+                        </attributes>
+                        <firstStatus>
+                            <ObjectStatus text="Last login:" state="None" visible="true"/>
+                        </firstStatus>
+                        <secondStatus>
+                            <ObjectStatus text="26 November 2020" state="None" visible="true"/>
+                        </secondStatus>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+        <footer/>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

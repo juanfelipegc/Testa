@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.untitledPrototype.controller.DialogInteractions" xmlns="sap.m">
+    <Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="false" title="Interactions" type="Standard" verticalScrolling="true">
+        <content>
+            <Text text="Muestra cuantas interactiones ha tenido la compañia en cada una de las plataformas durante la última semana." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+        </content>
+        <beginButton/>
+        <buttons>
+            <Button text="Close" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+        </buttons>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </Dialog>
+</core:FragmentDefinition>

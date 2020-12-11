@@ -1,0 +1,67 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Interactions" xmlns="sap.m" xmlns:chart="sap.chart" xmlns:data="sap.chart.data">
+    <Page showHeader="true" title="Interactions" showFooter="true" showNavButton="false">
+        <content>
+            <Breadcrumbs currentLocationText="Interactions" class="sapUiMediumMargin">
+                <links>
+                    <Link text="Menu" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false" press="_onLinkPress"/>
+                </links>
+            </Breadcrumbs>
+            <ScrollContainer horizontal="true" vertical="true" width="auto" height="307px" visible="true" class="sapUiMediumMargin">
+                <content>
+                    <GenericTile header="Facebook" subheader="Likes" frameType="Auto" class="sapUiLargeMargin">
+                        <tileContent>
+                            <TileContent footer="" unit="">
+                                <content>
+                                    <NumericContent value="789" valueColor="Neutral" indicator="None" icon="sap-icon://thumb-up"/>
+                                </content>
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+                    <GenericTile header="Instagram" subheader="Followers" frameType="Auto" class="sapUiLargeMargin">
+                        <tileContent>
+                            <TileContent footer="" unit="">
+                                <content>
+                                    <NumericContent value="1248" valueColor="Neutral" indicator="None" icon="sap-icon://person-placeholder"/>
+                                </content>
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+                    <GenericTile header="Twitter" subheader="Visits" frameType="Auto" class="sapUiLargeMargin">
+                        <tileContent>
+                            <TileContent footer="" unit="">
+                                <content>
+                                    <NumericContent value="128" valueColor="Neutral" indicator="None" icon="sap-icon://paper-plane"/>
+                                </content>
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+                    <GenericTile header="Events" subheader="Sub Header" frameType="OneByOne" class="sapUiLargeMargin">
+                        <tileContent>
+                            <TileContent footer="" unit="">
+                                <content>
+                                    <NumericContent value="0" valueColor="Neutral" indicator="None" icon="sap-icon://group"/>
+                                </content>
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+                </content>
+            </ScrollContainer>
+            <ScrollContainer horizontal="true" vertical="true" width="auto" height="500px" visible="true" class="sapUiMediumMargin">
+                <content>
+                    <chart:Chart id="sap_Responsive_Page_0-content-sap_m_ScrollContainer-1606440951221-content-sap_chart_BarChart-1606441040485" width="100%" height="450.00000000px" visibleDimensions="__id" visibleMeasures="mea0" vizProperties="{staticDataModel>/sap_Responsive_Page_0-content-sap_m_ScrollContainer-1606440951221-content-sap_chart_BarChart-1606441040485/vizProperties}" chartType="bar" selectionMode="Single" uiConfig="{}">
+                        <chart:dimensions>
+                            <data:Dimension name="__id" label="Age-range" role="category" textProperty="dim0"/>
+                        </chart:dimensions>
+                        <chart:measures>
+                            <data:Measure name="mea0" label="Quantity" role="axis2"/>
+                        </chart:measures>
+                    </chart:Chart>
+                </content>
+            </ScrollContainer>
+        </content>
+        <footer/>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

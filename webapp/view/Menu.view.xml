@@ -1,0 +1,46 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Menu" xmlns="sap.m">
+    <Page showHeader="true" title="Menu" showFooter="true" showNavButton="false">
+        <content>
+            <GenericTile header="Insights" subheader="" frameType="OneByOne" class="sapUiLargeMargin" press="_onGenericTilePress">
+                <tileContent>
+                    <TileContent footer="Sales" unit="Quantity">
+                        <content>
+                            <NumericContent value="27" valueColor="Neutral" indicator="None" icon="sap-icon://money-bills"/>
+                        </content>
+                    </TileContent>
+                </tileContent>
+            </GenericTile>
+            <GenericTile header="Traffic" subheader="" frameType="OneByOne" class="sapUiLargeMargin" press="_onGenericTilePress1">
+                <tileContent>
+                    <TileContent footer="Average" unit="Today">
+                        <content>
+                            <NumericContent value="29.3" valueColor="Neutral" indicator="None" icon="sap-icon://future"/>
+                        </content>
+                    </TileContent>
+                </tileContent>
+            </GenericTile>
+            <GenericTile header="Interactions" subheader="" frameType="OneByOne" class="sapUiLargeMargin" press="_onGenericTilePress2">
+                <tileContent>
+                    <TileContent footer="Average" unit="Interactions">
+                        <content>
+                            <NumericContent value="541.25" valueColor="Neutral" indicator="None" icon="sap-icon://thumb-up"/>
+                        </content>
+                    </TileContent>
+                </tileContent>
+            </GenericTile>
+            <GenericTile header="Users" subheader="" frameType="OneByOne" class="sapUiLargeMargin" press="_onGenericTilePress3">
+                <tileContent>
+                    <TileContent footer="Day" unit="New Users">
+                        <content>
+                            <NumericContent value="4" valueColor="Neutral" indicator="None" icon="sap-icon://person-placeholder"/>
+                        </content>
+                    </TileContent>
+                </tileContent>
+            </GenericTile>
+        </content>
+        <footer/>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

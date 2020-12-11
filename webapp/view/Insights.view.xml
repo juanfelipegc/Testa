@@ -1,0 +1,62 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Insights" xmlns="sap.m" xmlns:chart="sap.chart" xmlns:data="sap.chart.data">
+    <Page showHeader="true" title="Insights" showFooter="true" showNavButton="false">
+        <content>
+            <Breadcrumbs currentLocationText="Insights" class="sapUiMediumMargin">
+                <links>
+                    <Link text="Menu" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false" press="_onLinkPress"/>
+                </links>
+            </Breadcrumbs>
+            <ScrollContainer horizontal="true" vertical="true" width="auto" height="478.9930725097656px" visible="true" class="sapUiSmallMargin">
+                <content>
+                    <Title text="Interactions" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                    <Button text="" type="Transparent" icon="sap-icon://message-information" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" class="sapUiTinyMarginBegin" press="_onButtonPress"/>
+                    <chart:Chart id="sap_Responsive_Page_0-content-sap_m_ScrollContainer-1606439800549-content-sap_chart_LineChart-1" width="100%" height="397px" visibleDimensions="__id" visibleMeasures="mea0,Measure1,Measure3" vizProperties="{staticDataModel>/sap_Responsive_Page_0-content-sap_m_ScrollContainer-1606439800549-content-sap_chart_LineChart-1/vizProperties}" chartType="line" selectionMode="Single" uiConfig="{}">
+                        <chart:dimensions>
+                            <data:Dimension name="__id" label="Day of the week" role="category" textProperty="dim0"/>
+                        </chart:dimensions>
+                        <chart:measures>
+                            <data:Measure name="mea0" label="Facebook" role="axis2"/>
+                            <data:Measure name="Measure1" label="Intagram" role="axis2"/>
+                            <data:Measure name="Measure3" label="WebSite" role="axis2"/>
+                        </chart:measures>
+                    </chart:Chart>
+                </content>
+            </ScrollContainer>
+            <ScrollContainer horizontal="true" vertical="true" width="auto" height="500px" visible="true" class="sapUiSmallMargin">
+                <content>
+                    <Title text="Positive/Negative/Neutral Insights" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                    <Button text="" type="Transparent" icon="sap-icon://message-information" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" class="sapUiTinyMarginBegin" press="_onButtonPress1"/>
+                    <chart:Chart id="sap_Responsive_Page_0-content-sap_m_ScrollContainer-1607023375094-content-sap_chart_StackedColumnChart-1607023397392" width="100%" height="450px" visibleDimensions="__id" visibleMeasures="mea0,mea1,Measure1" vizProperties="{staticDataModel>/sap_Responsive_Page_0-content-sap_m_ScrollContainer-1607023375094-content-sap_chart_StackedColumnChart-1607023397392/vizProperties}" chartType="stacked_column" selectionMode="Single" uiConfig="{}">
+                        <chart:dimensions>
+                            <data:Dimension name="__id" label="Day of the week" role="category" textProperty="dim0"/>
+                        </chart:dimensions>
+                        <chart:measures>
+                            <data:Measure name="mea0" label="Positive" role="axis2"/>
+                            <data:Measure name="mea1" label="Negative" role="axis2"/>
+                            <data:Measure name="Measure1" label="Neutral" role="axis2"/>
+                        </chart:measures>
+                    </chart:Chart>
+                </content>
+            </ScrollContainer>
+            <ScrollContainer horizontal="true" vertical="true" width="auto" height="500px" visible="true" class="sapUiSmallMargin">
+                <content>
+                    <Title text="Sales" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                    <Button text="" type="Transparent" icon="sap-icon://message-information" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" class="sapUiTinyMarginBegin" press="_onButtonPress2"/>
+                    <chart:Chart id="sap_Responsive_Page_0-content-sap_m_ScrollContainer-1606439795513-content-sap_chart_ColumnChart-1606439821252" width="100%" height="450px" visibleDimensions="__id" visibleMeasures="mea0,Sales Website" vizProperties="{staticDataModel>/sap_Responsive_Page_0-content-sap_m_ScrollContainer-1606439795513-content-sap_chart_ColumnChart-1606439821252/vizProperties}" chartType="column" selectionMode="Single" uiConfig="{}">
+                        <chart:dimensions>
+                            <data:Dimension name="__id" label="Day of the week" role="category" textProperty="dim0"/>
+                        </chart:dimensions>
+                        <chart:measures>
+                            <data:Measure name="mea0" label="Sales Store" role="axis2"/>
+                            <data:Measure name="Sales Website" role="axis2"/>
+                        </chart:measures>
+                    </chart:Chart>
+                </content>
+            </ScrollContainer>
+        </content>
+        <footer/>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
